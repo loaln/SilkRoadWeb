@@ -1,0 +1,111 @@
+/* General styles */
+
+.nav {
+	position: fixed;
+	width: 8em;
+	margin: 0 0 0 3em;
+	top: 40%;
+	z-index: 100;
+}
+
+.nav__item {
+	line-height: 1;
+	position: relative;
+	display: block;
+	margin: 0;
+	padding: 0;
+	letter-spacing: 0;
+	color: currentColor;
+	border: 0;
+	background: none;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+.nav__item:focus {
+	outline: none;
+}
+
+/* Totit */
+
+.nav--totit .nav__item {
+	width: 2.5em;
+	height: 2.5em;
+	margin: 0.5em 0;
+}
+
+.nav--totit .nav__item::before {
+	content: '';
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 0.65em;
+	height: 0.65em;
+	margin: -0.325em 0 0 -0.325em;
+	border-radius: 50%;
+	background: #fff;
+	-webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
+	transition: transform 0.3s, opacity 0.3s;
+	-webkit-animation-timing-function: cubic-bezier(0.2,1,0.3,1);
+	animation-timing-function: cubic-bezier(0.2,1,0.3,1);
+}
+
+.nav--totit .nav__item:not(.nav__item--current):focus::before,
+.nav--totit .nav__item:not(.nav__item--current):hover::before {
+	opacity: 0.6;
+}
+
+.nav--totit .nav__item--current::before {
+	opacity: 0;
+	-webkit-transform: translate3d(0,1.5em,0) scale3d(0,0,1);
+	transform: translate3d(0,1.5em,0) scale3d(0,0,1);
+}
+
+.nav--totit .nav__icon {
+	z-index: 100;
+	display: block;
+	width: 100%;
+	height: 100%;
+	margin: 0 auto;
+	opacity: 0;
+	-webkit-transform: scale3d(0,0,1);
+	transform: scale3d(0,0,1);
+	-webkit-transform-origin: 50% 100%;
+	transform-origin: 50% 100%;
+	-webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
+	transition: transform 0.3s, opacity 0.3s;
+	-webkit-animation-timing-function: cubic-bezier(0.2,1,0.3,1);
+	animation-timing-function: cubic-bezier(0.2,1,0.3,1);
+	fill: #0b64ce;
+}
+
+.nav--totit .nav__item--current .nav__icon {
+	opacity: 1;
+	-webkit-transform: scale3d(1,1,1);
+	transform: scale3d(1,1,1);
+}
+
+.nav--totit .nav__item-title {
+	font-weight: bold;
+	color: white;
+	line-height: 2.5em;
+	position: absolute;
+	top: 0;
+	left: 3em;
+	white-space: nowrap;
+	pointer-events: none;
+	opacity: 0;
+	-webkit-transform: translate3d(0,15px,0);
+	transform: translate3d(0,15px,0);
+	-webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
+	transition: transform 0.3s, opacity 0.3s;
+	-webkit-animation-timing-function: cubic-bezier(0.2,1,0.3,1);
+	animation-timing-function: cubic-bezier(0.2,1,0.3,1);
+}
+
+.nav--totit .nav__item--current .nav__item-title {
+	opacity: 1;
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+	-webkit-transition-delay: 0.15s;
+	transition-delay: 0.15s;
+}

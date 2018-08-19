@@ -1,0 +1,493 @@
+@charset "utf-8";
+html,body{
+	height: 100%;
+	width: 100%;
+}
+body{
+	margin: 0 0;
+	padding: 0;
+}
+#public{
+	position: fixed;
+	width: 45px;
+	height: 120px;
+	z-index: 2500;
+	left: 95%;
+	top: 80%;
+}
+#public .pub{
+	width: 100%;
+	height: 30%;
+	margin-top: 15px;
+	cursor: pointer;
+}
+#public #totop{
+	display: none;
+}
+#menu{
+	width: 170px;
+	position: absolute;
+	z-index: 2600;
+	display: none;
+}
+#menu a:hover{
+	color: black;
+	text-decoration: underline;
+}
+#menu a{
+	color: black;
+	text-decoration: none;
+}
+.all {
+	width:100%;
+	height:100%;
+	padding:0;
+}
+#picdemo{
+	width: 1000px;
+	height: 850px;
+	position: absolute;
+	z-index: 2010;
+	display: none;
+	background-color: #2F4056;
+}
+#picdemo #pics{
+	width: 900px;
+	height: 440px;
+	margin-left: 50px;
+	margin-top: 50px;
+	background-color: salmon;
+}
+#picdemo #words{
+	line-height: 1.5;
+	width: 900px;
+	height: 220px;
+	margin-left: 50px;
+	margin-top: 50px;
+	color: white;
+}
+nav{
+	width: 100%;
+	height: 11%;
+	margin:0;
+	position: fixed;
+	/*background-color:#4aa5ff;*/
+	background-color: cornflowerblue;
+	display: block;
+	z-index: 100;
+	box-shadow:0 10px 10px rgba(36,52,61,0.31);
+}
+nav #logo{
+	width: 20%;
+	height: 70%;
+	float: left;
+	margin-right: 15%;
+	margin-left: 15%;
+	margin-top: 1%;
+}
+nav #logo img{
+	max-width: 100%;
+	max-height: 100%;
+}
+nav #nav{
+	/*width: 35%;*/
+	width: 32.5%;
+	height: 70%;
+	float: left;
+	/*margin-top: 1.25%;*/
+	margin-top: 1%;
+}
+nav #nav img{
+	opacity: 0.6;
+	filter: alpha(opacity=40);
+	max-width: 100%;
+	max-height: 100%;
+}
+nav #nav ul{
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	height: 100%;
+	width: 100%;
+	margin-top: 1%;
+}
+nav #nav ul li{
+	float: left;
+	height: 100%;
+	width: 10%;
+	margin-left: 8%;
+	margin-top: 2%;
+	text-align: center;
+	font-size: small;
+	color: white;
+	font-family:"微软雅黑",Arial,Helvetica,sans-serif;
+}
+#pic{
+	width:100%;
+	height:500%;
+}
+#pic #mix{
+	width:75%;
+	height:16.6%;
+	margin-left:12.5%;
+}
+#pic #mix .sma-pic{
+	width:23%;
+	height:95%;
+	margin-top:2%;
+	float:left;
+}
+#pic #mix .sma-pic .sp1{
+	width:100%;
+	height:30%;
+	margin-bottom: 8.5%;
+	overflow: hidden;
+	box-shadow: 0 0 10px gray;
+}
+#pic #mix .sma-pic .sp1 img{
+	width: 100%;
+	height: 100%;
+	opacity: 0.9;
+	transition: all 0.5s;
+	cursor: pointer;
+}
+#pic #mix .sma-pic .sp1 img:hover{
+	transform: scale(1.02,1.02);
+	transition: all 2s;
+	opacity: 1;
+}
+#pic #mix #big-pic{
+	width:75%;
+	height:85%;
+	margin-top:5%;
+	margin-left:2%;
+	float:left;
+	box-shadow: 0 0 30px gray;
+}
+#pic #mix #big-pic img{
+	width: 100%;
+	height: 100%;
+}
+#pic #mix #big-pic img:hover{
+	opacity: 0.9;
+}
+#pic #block{
+	width:100%;
+	height:140%;
+	padding-top: 2%;
+	margin-bottom: 2%;
+}
+#pic #block #blo1{
+	width:80%;
+	margin-left:10%;
+	margin-top:5%;
+	height:21%;
+}
+#pic #block #blo1-1{
+	width:100%;
+	margin-top:5%;
+	height:auto;
+}
+#pic #block #blo1 #word1-1{
+	width:100%;
+	height:15%;
+}
+#pic #block #blo1 #pic1-1{
+	width:100%;
+	height:22%;
+	margin-top:2%;
+	margin-bottom:2%;
+	overflow: hidden;
+}
+#pic #block #blo1 #pic1-1 img{
+	cursor: pointer;
+	width: 31%;
+	margin-left: 1.7%;
+	float:left;
+	transition: all 1s;
+}
+#pic #block #blo1 #pic1-1 img:hover{
+	transform: scale(1.02,1.02);
+	box-shadow: 0 0 20px gray;
+	transition: all 2s;
+}
+#pic #block #blo1 #blo1-1{
+	width:100%;
+	height:55%;
+}
+#block #blo1 #blo1-1 #word1-2{
+	width:60%;
+	height:100%;
+	margin-left: 2%;
+	float:left;
+}
+#block #blo1 #blo1-1 #pic1-2{
+	width:35%;
+	height:100%;
+	margin-left:3%;
+	float:left;
+	padding-top: 2%;
+}
+.sp2{
+	width: 31%;
+	height: 85%;
+	margin-left: 1.7%;
+	float:left;
+	overflow: hidden;
+}
+.sp3{
+	width:80%;
+	height:31%;
+	margin-bottom:5%;
+	margin-left:10%;
+	overflow: hidden;
+}
+.sp3 img{
+	transition: all 1s;
+}
+.sp3 img:hover{
+	transform: scale(1.02,1.02);
+	transition: all 2s;
+}
+#block #blo2{
+	width:80%;
+	margin-left:10%;
+	height:9%;
+	margin-top:6%;
+}
+#block #blo2 #pic2-2{
+	width:25%;
+	height:100%;
+	float:left;
+	padding-top: 3%;
+}
+#block #blo2 #pic2-2 .sp3{
+	margin-bottom:6%;
+	width: 90%;
+	margin-left: 5%;
+}
+#block #blo2 #word2{
+	width:37%;
+	height:50%;
+	padding-top: 9%;
+	margin-left: 3.5%;
+	margin-right: 3.5%;
+	float:left;
+}
+#block #blo2 #pic2-1{
+	width:30%;
+	height:100%;
+	float:left;
+	padding-top: 3%;
+	cursor: pointer;
+	overflow: hidden;
+}
+#block #blo2 #pic2-1 img{
+	transition: all 1s;
+}
+#block #blo2 #pic2-1 img:hover{
+	transform: scale(1.04,1.04);
+	transition: all 2s;
+}
+#block #blo3{
+	width:80%;
+	margin-left:10%;
+	margin-top: 2%;
+	height:13%;
+	margin-top:6%;
+}
+#block #blo3 #blo3-1{
+	width:100%;
+	height:58%;
+}
+#block #blo3 #blo3-1 #word3{
+	width:60%;
+	margin-right:5%;
+	margin-top:7%;
+	height:78%;
+	float:left;
+}
+#block #blo3 #blo3-1 #pic3-1{
+	width:33%;
+	margin-top:2%;
+	height:95%;
+	float:left;
+	overflow: hidden;
+}
+#block #blo3 #blo3-1 #pic3-1 img{
+	transition: all 1s;
+}
+#block #blo3 #blo3-1 #pic3-1 img:hover{
+	transform: scale(1.02,1.02);
+	transition: all 2s;
+}
+#block #blo3 #pic3-2{
+	width:100%;
+	height:42%;
+	padding-top: 2.5%;
+}
+#block #blo3 #pic3-2 img{
+	width: 31%;
+	height: 85%;
+	margin-left: 1.7%;
+	float:left;
+	cursor: pointer;
+}
+#block #blo3 #pic3-2 img:hover{
+	box-shadow: 0 0 20px gray;
+	transform: scale(1.02,1.02);
+	transition: all 2s;
+}
+#block #blo4{
+	width:80%;
+	margin-left:10%;
+	margin-top: 6%;
+	height:50%;
+}
+
+#block #blo4 #blo4-1{
+	width:100%;
+	height:25%;
+}
+#block #blo4 #blo4-1 #word4-1{
+	width:30%;
+	height:50%;
+	margin-left: 8%;
+	padding-top: 13%;
+	float:left;
+}
+#block #blo4 #blo4-1 #pic4-2{
+	width:55%;
+	margin-left:7%;
+	padding-top: 0.8%;
+	height:100%;
+	float:left;
+}
+#pic4-2 .sp4{
+	width:80%;
+	height:47.5%;
+	margin-bottom:3.5%;
+	overflow: hidden;
+}
+#pic4-2 .sp4 img{
+	transition: all 1s;
+}
+#pic4-2 .sp4 img:hover{
+	transform: scale(1.02,1.02);
+	transition: all 2s;
+}
+.s5{
+	width: 100%;
+	height: 48%;
+}
+.s5 .sp5{
+	width: 47%;
+	margin-left: 1%;
+	margin-top: 1%;
+	float:left;
+	cursor: pointer;
+}
+.s5 .sp5 img{
+	transition: all 1s;
+}
+.s5 .sp5 img:hover{
+	opacity: 0.85;
+}
+#block #blo4 #blo4-2{
+	width:100%;
+	height:23%;
+	margin-top:1.5%;
+}
+#block #blo4 #blo4-2 #pic4-3{
+	width:70%;
+	height:100%;
+	margin-right:5%;
+	float:left;
+}
+#block #blo4 #blo4-2 #word4-2{
+	width:25%;
+	height:90%;
+	margin-top: 2%;
+	float:left;
+}
+#block #blo4 #blo4-3{
+	width:100%;
+	height:23%;
+	margin-top:1.5%;
+}
+#block #blo4 #blo4-4{
+	width:100%;
+	height:26%;
+	margin-top:4%;
+}
+#word4-3{
+	width:100%;
+	height:auto;
+}
+#word4-4{
+	width:25%;
+	height:80%;
+	margin-left: 2.5%;
+	margin-top: 8%;
+	float:left;
+}
+#pic4-4{
+	width:100%;
+	margin-top: 2%;
+	height:auto;
+}
+#pic4-4 img{
+	width: 31%;
+	height: 85%;
+	margin-left: 1.7%;
+	float:left;
+	cursor: pointer;
+}
+#pic4-4 img:hover{
+	box-shadow: 0 0 20px gray;
+	transform: scale(1.02,1.02);
+	transition: all 2s;
+}
+#pic4-5{
+	width:70%;
+	height:90%;
+	margin-left: 2.5%;
+	margin-top: 1.5%;
+	float:left;
+	}
+.sp6{
+	width: 47%;
+	margin-left: 1%;
+	margin-top: 1%;
+	height:50%;
+	float:left;
+	cursor: pointer;
+}
+.sp6 img{
+	transition: all 1s;
+}
+.sp6 img:hover{
+	opacity: 0.85;
+}
+#ret{
+	text-align: center;
+	width: 100%;
+	height: 1%;
+}
+.about{
+	width: 100%;
+	height: 5%;
+	/*background-color: cadetblue;*/
+	background-color: cornflowerblue;
+	color: #FFF;
+}
+.about a:link{
+	text-decoration: none;
+	color: white;
+}
+.about a:hover{
+	text-decoration: underline;
+}
+.about a:visited{
+	color: white;
+}

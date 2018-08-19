@@ -1,0 +1,488 @@
+@charset "utf-8";
+html,body{
+	width: 100%;
+}
+* { margin: 0; padding: 0;}
+.hidden {
+	position: absolute;
+	overflow: hidden;
+	width: 0;
+	height: 0;
+	pointer-events: none;
+}
+.outbody{
+	width: 100%;
+	overflow: hidden;
+	
+}
+.panel{
+	height: 100%;
+	background-repeat:no-repeat ;
+	background-size:100% 100%;
+}
+#main{
+	background-image: url(../image/index/img/1.jpg);
+}
+.t{
+	margin-left: 93%;
+	margin-top: 42%;
+	position: fixed;
+	display: none;
+}
+.t img{
+	opacity: 0.6;
+	filter: alpha(opacity=55);
+	box-shadow: 5px 5px 3px gray;
+	width: 70%;
+	height: auto;
+	max-width: 100%;
+	max-height: 100%;
+}
+.top{
+	width: 55%;
+	height: 28%;
+	margin-left: 2%;
+}
+.top img{
+	width: auto;
+	height: auto;
+	max-width: 100%;
+	max-height: 100%;
+	margin-top: 3%;
+}
+.tleft{
+	width: 55%;
+	height: 100%;
+	margin-left: 2%;
+	float: left;
+}
+.tright{
+	width: 32.5%;
+	height: 40%;
+	margin-top: 5%;
+	float: left;
+}
+.tright img{
+	opacity: 0.6;
+	filter: alpha(opacity=40);
+}
+.tright ul{
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	height: 100%;
+	width: 100%;
+	margin-top: 5%;
+}
+.tright ul li{
+	float: left;
+	height: 100%;
+	width: 10%;
+	margin-left: 8%;
+	margin-top: 2%;
+	text-align: center;
+	font-size: small;
+	color: white;
+	font-family:"微软雅黑",Arial,Helvetica,sans-serif;
+}
+.mid{
+	padding: 0px;
+	margin: 0 auto;
+	width:75%;
+	height:55%;
+	background-color:rgba(255,255,255,0.55);
+	/*display: none;*/
+}
+.v1 {
+	padding-left: 2.5%;
+	padding-right: 2.5%;
+	padding-top: 3.5%;
+	float: left;
+	position:relative;
+	width:20%;
+	height: 100%;
+}
+.v1 img{
+	width: 80%;
+	height: auto;
+	max-width: 100%;
+	max-height: 100%;
+	transition: all 0.5s ease;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+}
+.display{
+	opacity:0;
+	filter:alpha(opacity=0);
+}
+#China{
+	background-image: url(../image/index/bgChina.png);
+}
+#China .mid .Cleft{
+	height: 90%;
+	width: 50%;
+	margin-left: 2%;
+	margin-right: 2%;
+	float: left;
+}
+#China .mid .Cleft .CleftT{
+	height: 60%;
+	width: 100%;
+	margin-top: 4%;
+	position: relative;
+}
+#China .mid .Cleft .CleftT video{
+	width: 100%;
+	height: auto;
+	max-width: 100%;
+	max-height: 100%;
+
+}
+#China .mid .Cleft .CleftB{
+	margin-top: 4%;
+	padding: 1.5% 2.5%;
+	line-height: 2;
+	border: 1px dashed #191919;
+	background-color: white;
+	opacity: 0.6;
+}
+#China .mid .Cmid{
+	height: 90%;
+	width: 22%;
+	float: left;
+	margin-left: 1.5%;
+	margin-top: 2%;
+}
+#China .mid .Cmid ul{
+	margin-left: 3%;
+	margin-top: 8%;
+}
+#China .mid .Cmid ul li{
+	padding-bottom: 5%;
+}
+#China .mid .Cmid ul li a{
+	color: black;
+	text-decoration: none;
+}
+#China .mid .Cmid ul li a:hover{
+	text-decoration: underline;
+}
+#China .mid .Cmid a{
+	color: gray;
+}
+/*#China .mid .Cmid a:hover{*/
+	/*text-decoration: line-through;*/
+/*}*/
+#China .mid .Cright{
+	height: 90%; 
+	width: 18%;
+	/*background-color: gainsboro;*/
+	margin-left: 2%; 
+	margin-top: 2%;
+	float: left;
+
+	text-align: center;
+	overflow: hidden;
+	/*display: none;*/
+}
+
+.Cright img{
+	transition: all 0.3s ease;
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+}
+.Cright .vedioImg{
+	margin: 1% auto;
+	width: 100%;
+	position: relative;
+}
+.Cright .vedioImg img{
+	width: 100%;
+}
+.Cright .vedioImg img:hover{
+	cursor: pointer;
+}
+.ChinaDisplay{
+	opacity:0;
+	filter:alpha(opacity=0);
+}
+.Active{
+	opacity:1;
+}
+
+#MidAsian{
+	background-image: url(../image/index/bgMidAsia.jpg);
+}
+#MidAsian .mid .Mleft{
+	height: 86%;
+	width: 58%;
+	margin-left: 3.5%;
+	margin-top: 1.5%;
+	float: left;
+}
+#MidAsian .mid .Mleft .MleftT{
+	height: 23%;
+	width: 100%;
+	margin-top: 1.5%;
+	color: #2f01b5;
+}
+#MidAsian .mid .Mleft .MleftM{
+	height: 20%;
+	width: 100%;
+	opacity:0.5;
+	padding-left: 10%;
+}
+#MidAsian .mid .Mleft .MleftM a{
+	text-decoration: none;
+}
+#MidAsian .mid .Mleft .MleftM a:hover{
+	text-decoration: underline;
+}
+/*#MidAsian .mid .Mleft .MleftB a:hover{*/
+	/*text-decoration: line-through;*/
+/*}*/
+#MidAsian .mid .Mleft .MleftB{
+	width: 90%;
+	padding: 3% 3%;
+	line-height: 2;
+	background-color: white;
+	opacity:0.7;
+}
+#MidAsian .mid .Mright{
+	position: relative;
+	width: 33%;
+	height: 86%;
+	margin-left: 2%;
+	margin-top: 2.5%;
+	float: left;
+	background-color: antiquewhite;
+}
+.ImgSlides {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	text-align: center;
+}
+.ImgSlides ul{
+	display: block;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+.ImgSlides ul li {
+	display: block;
+	list-style: none;
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+	text-align: center;
+	float: left;
+}
+.ImgSlides img{
+	height:100%;
+	transition: all 0.3s ease;
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	cursor: pointer;
+}
+.ImgSlides img:hover{
+	transform: scale(1.2);
+}
+
+#WestAsian{
+	background-image: url(../image/index/bgWestAsia.jpg);
+}
+#WestAsian .mid .mids{
+	width: 90%;
+	height: 85%;
+	margin: 2% auto;
+	padding-top: 3%;
+}
+#WestAsian .mid .mids .Wtop{
+	width: 100%;
+	height: 18%;
+	margin: 0 auto;
+	text-align: center;
+}
+#WestAsian .mid .mids .Wmid{
+	width: 100%;
+	height: 10%;
+	margin: 1% auto;
+	text-align: center;
+}
+#WestAsian .mid .mids .Wmid a{
+	text-decoration: none;
+	color: #5f5557;
+}
+#WestAsian .mid .mids .Wmid a:hover{
+	text-decoration: underline;
+}
+#WestAsian .mid .mids .Wbottom{
+	width: 100%;
+	height: 60%;
+	margin: 1% auto;
+	/*background-color: #E8D0FF;*/
+}
+
+/*欧洲*/
+#Europe{
+	background-image: url(../image/index/bgEurope.jpg);
+}
+#Europe .mid .Eleft{
+	height: 85%;
+	width: 18%;
+	margin-left: 4%;
+	margin-top: 2.5%;
+	background-color: lightgoldenrodyellow;
+	float: left;
+	overflow: hidden;
+}
+#Europe .mid .Eleft img{
+	height: 100%;
+}
+#Europe .mid .Emid{
+	height: 85%;
+	width: 35%;
+	float: left;
+	margin-left: 2%;
+	margin-top: 2.5%;
+}
+#Europe .mid .Emid .EmidT{
+	width: 97%;
+	margin-bottom: 2%;
+	padding-top: 3%;
+	padding-bottom: 3%;
+	padding-left: 3%;
+	background-color: rgba(255,255,255,0.65);
+}
+#Europe .mid .Emid .EmidM{
+	width: 94%;
+	margin-bottom: 2%;
+	padding: 3% 3%;
+	line-height: 2;
+	background-color: rgba(255,255,255,0.65);
+}
+#Europe .mid .Emid .EmidM a{
+	color: #10415c;
+}
+/*#Europe .mid .Emid .EmidM a:hover{*/
+	/*text-decoration: line-through;*/
+/*}*/
+#Europe .mid .Emid .EmidB{
+	width: 100%;
+	/*background-color: rgba(255,255,255,0.65);*/
+	float: left;
+	margin-top: 5%;
+	/*position: relative;*/
+}
+#Europe .mid .Emid .EmidB ul li{
+	display: block;
+	float: left;
+	list-style-type: none;
+	width: 20%;
+	margin-left: 2%;
+	margin-right: 2%;
+}
+#Europe .mid .Emid .EmidB ul li img{
+	max-width: 100%;
+	max-height: 100%;
+	height: 100%;
+	opacity: 0.8;
+}
+#Europe .mid .Eright{
+	height: 85%; 
+	width: 35%;
+	margin-left: 2%; 
+	margin-top: 2.5%;
+	float: left;
+}
+#Europe .mid .Eright .ErightT{
+	width: 97%;
+	margin-bottom: 2%;
+	padding-top: 3%;
+	padding-bottom: 3%;
+	padding-left: 3%;
+	background-color: rgba(255,255,255,0.65);
+	line-height: 1.5;
+}
+#Europe .mid .Eright .ErightB{
+	width: 100%;
+	height: 75%;
+	background-color: rgba(255,255,255,0.65);
+}
+/*****************************************/
+.sliderbox{
+	width: 100%;
+	height: 100%;
+	position:relative;/*必须加这句,否则上下滚动时会没有效果*/
+	overflow: hidden;
+}
+.sliderbox li{
+	display: block;
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+}
+.EuropeSliderContainer{
+	position: relative;
+	float: left;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+.item-img{
+	position: relative;
+	float: left;
+	top: 0;
+	height: 100%;
+	width: 43%;
+	overflow: hidden;
+}
+.item-img img{
+	height: 100%;
+}
+.item-content{
+	float: left;
+	/*position: absolute;*/
+	/*top: 0;*/
+	/*left: 45%;*/
+	margin-left: 2%;
+	height: 100%;
+	width: 55%;
+}
+
+/*READ MORE的删除线动效*/
+.click-box a:hover{
+	text-decoration: none;
+}
+.click-box{
+	position: relative;
+	text-decoration: none;
+}
+
+.click-box span:after{
+	content: '>>>';
+}
+.click-box:before{
+	background: black;
+	height: 1px;
+	width: 100%;
+	content: '';
+	position: absolute;
+	bottom: 50%;
+	left: 0;
+	-webkit-transition: width .2s;
+	-moz-transition: width .2s;
+	-ms-transition: width .2s;
+	-o-transition: width .2s;
+	transition: width .2s;
+}
+/*click-box hover的情况下，before怎样怎样*/
+.click-box:hover:before{
+	width: 0;
+}
+.click-box span:hover{
+	color: #0d77b6;
+}
+/*****************************************/

@@ -1,0 +1,432 @@
+@charset "utf-8";
+html,body{
+	height: 100%;
+	width: 100%;
+}
+body{
+	margin: 0 0;
+	padding: 0;
+}
+#public{
+	position: fixed;
+	width: 45px;
+	height: 120px;
+	z-index: 2500;
+	left: 95%;
+	top: 80%;
+}
+#public .pub{
+	width: 100%;
+	height: 30%;
+	margin-top: 15px;
+	cursor: pointer;
+}
+#public #totop{
+	display: none;
+}
+#menu{
+	width: 170px;
+	position: absolute;
+	z-index: 2600;
+	display: none;
+}
+#menu a:hover{
+	color: black;
+	text-decoration: underline;
+}
+#menu a{
+	color: black;
+	text-decoration: none;
+}
+.all {
+	background-color: #FFF;
+	width:100%;
+	height:100%;
+	padding:0;
+}
+nav{
+	width: 100%;
+	height: 11%;
+	margin:0;
+	position: fixed;
+	/*background-color:#4aa5ff;*/
+	background-color: cornflowerblue;
+	display: block;
+	z-index: 100;
+	box-shadow:0 10px 10px rgba(36,52,61,0.31);
+}
+nav #logo{
+	width: 20%;
+	height: 70%;
+	float: left;
+	margin-right: 15%;
+	margin-left: 15%;
+	margin-top: 1%;
+}
+nav #logo img{
+	max-width: 100%;
+	max-height: 100%;
+}
+nav #nav{
+	/*width: 35%;*/
+	width: 32.5%;
+	height: 70%;
+	float: left;
+	/*margin-top: 1.25%;*/
+	margin-top: 1%;
+}
+nav #nav img{
+	opacity: 0.6;
+	filter: alpha(opacity=40);
+	max-width: 100%;
+	max-height: 100%;
+}
+nav #nav ul{
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	height: 100%;
+	width: 100%;
+	margin-top: 1%;
+}
+nav #nav ul li{
+	float: left;
+	height: 100%;
+	width: 10%;
+	margin-left: 8%;
+	margin-top: 2%;
+	text-align: center;
+	font-size: small;
+	color: white;
+	font-family:"微软雅黑",Arial,Helvetica,sans-serif;
+}
+#pic{
+	background-color:#DEDEDE;
+	width:100%;
+	height:89%;
+}
+#pic #mix{
+	width:80%;
+	height:100%;
+	margin-left:10%;
+}
+#pic #mix #big-pic {
+	width:60%;
+	height:80%;
+	margin-top:3%;
+	margin-left:2%;
+	margin-right:2%;
+	padding-top: 4%;
+	float:left;
+}
+#pic #mix #big-pic img{
+	width: 100%;
+	height: 90%;
+	box-shadow: 0 0 30px gray;
+	transition: all 1s;
+}
+#pic #mix #big-pic img:hover{
+	opacity: 0.9;
+	transition: all 2s;
+}
+#pic #mix .sma-pic1 {
+	width:18%;
+	height:90%;
+	margin-top:3%;
+	float:left;
+}
+#pic #mix .sp1{
+	width:100%;
+	height:31%;
+	margin-bottom:6%;
+	overflow: hidden;
+	box-shadow: 0 0 10px gray;
+}
+#pic #mix .sp1 img{
+	width: 100%;
+	height: 100%;
+	transition: all 1s;
+	cursor: pointer;
+	opacity: 0.9;
+}
+#pic #mix .sp1 img:hover{
+	transform: scale(1.02,1.02);
+	transition: all 2s;
+	opacity: 1;
+}
+#block{
+	width:100%;
+	height:1000%;
+}
+#block #blo1{
+	width:80%;
+	margin-left:10%;
+	margin-top:4%;
+	height:18%;
+}
+#block #blo1 #pic1-1{
+	width:100%;
+	height:19%;
+}
+#block #blo1 #word1-1{
+	width:100%;
+	height:34%;
+}
+#block #blo1 #pic1-2{
+	width:100%;
+	height:19%;
+}
+#block #blo1 #word1-2{
+	width:100%;
+	height:30%;
+}
+#block #blo2{
+	width:80%;
+	height: 18%;
+	margin-left:10%;
+	padding-top: 2%;
+	margin-top:0.5%;
+}
+#block #blo2 #word2{
+	width:65%;
+	height:auto;
+	float:left;
+}
+#block #blo2 #pic2right{
+	width:23%;
+	height:90%;
+	float:left;
+	margin-left:5%;
+	margin-top: 5%;
+}
+#block #blo2 #pic2right .sp3{
+	width:85%;
+	height:30%;
+	margin-bottom:33%;
+	margin-left:10%;
+	overflow: hidden;
+}
+#block #blo2 #pic2right .sp3 img{
+	transition: transform 1s;
+}
+#block #blo2 #pic2right .sp3 img:hover{
+	transform: scale(1.03,1.03);
+	transition: transform 2s;
+}
+#block #blo3{
+	width:80%;
+	margin-left:10%;
+	margin-top: 2%;
+	height:16%;
+}
+#block #blo3 #blo3-1{
+	width:100%;
+	height:75%;
+}
+#block #blo3 #blo3-1 #word3{
+	width:65%;
+	height:100%;
+	float:left;
+}
+#block #blo3 #blo3-1 #pic3-1{
+	width:27%;
+	margin-top:4%;
+	margin-left:7%;
+	height:90%;
+	float:left;
+}
+.sp4{
+	width:100%;
+	heigth:45%;
+	margin-bottom:2%;
+	margin-top: 5%;
+	overflow: hidden;
+}
+.sp4 img{
+	transition: transform 1s;
+}
+.sp4 img:hover{
+	transform: scale(1.03,1.03);
+	transition: transform 2s;
+}
+#block #blo3 #pic3-2{
+	width:100%;
+	height:27%;
+	margin-top: 1.5%;
+}
+#block #blo3 #pic3-2 img{
+	width:32%;
+	heigth:100%;
+	margin-top:4%;
+	margin-right: 2%;
+	float:left;
+	cursor: pointer;
+	transition: all 1s;
+}
+#block #blo3 #pic3-2 img:hover{
+	transform: scale(1.02,1.02);
+	box-shadow: 0 0 20px gray;
+	transition: all 0.8s;
+}
+#block #blo4{
+	width:80%;
+	margin-left:10%;
+	margin-top:8%;
+	height:40.5%;
+}
+#block #blo4 #blo4-1 #word4-1 {
+	width:43%;
+	height:100%;
+	float:left;
+	}
+#block #blo4 #pic4-1{
+	width:47%;
+	height:100%;
+	margin-left:6%;
+	margin-top: 8%;
+	float:left;
+}
+#block #blo4 #blo4-1{
+	width:100%;
+	height:25%;
+}
+#block #blo4 #blo4-2{
+	width:100%;
+	height:25%;
+	margin-top:8%;
+}
+#block #blo4 #pic4-2 {
+	width:60%;
+	margin-right:5%;
+	padding-top: 2.5%;
+	height:100%;
+	float:left;
+	}
+#block #blo4 #blo4-2 #word4-2{
+	width:35%;
+	height:100%;
+	float:left;
+}
+#block #blo4 #blo4-3{
+	width:100%;
+	height:20%;
+	margin-top:12%;
+}
+#block #blo4 #pic4-3{
+	width:100%;
+	height:45%;
+	margin-bottom:2%;
+}
+#block #blo4 #pic4-3 img{
+	width:32%;
+	heigth:100%;
+	margin-right:2%;
+	float:left;
+	cursor: pointer;
+	transition: all 1s;
+}
+#block #blo4 #pic4-3 img:hover{
+	transform: scale(1.02,1.02);
+	box-shadow: 0 0 20px gray;
+	transition: all 0.8s;
+}
+#block #blo4 #blo4-3 #word4-3{
+	width:100%;
+	height:38%;
+	margin-top: 10%;
+}
+#block #blo4 #blo4-4{
+	width:100%;
+	height:18%;
+	margin-top:11%;
+}
+#block #blo4 #blo4-4 #word4-4{
+	width:45%;
+	height:100%;
+	float:left;
+}
+#block #blo4 #pic4-4{
+	width:50%;
+	height:100%;
+	margin-left:4.5%;
+	margin-top: 14%;
+	float:left;
+}
+.sp9-1{
+	width:45%;
+	heigth:90%;
+	margin-left:5%;
+	float:left;
+}
+.sp9-2{
+	width:45%;
+	heigth:90%;
+	margin-left:2%;
+	margin-top:10%;
+	float:left;
+}
+.sp2{
+	width:30%;
+	heigth:100%;
+	margin-left:2%;
+	float:left;
+	overflow: hidden;
+}
+.sp2 img{
+	cursor: pointer;
+	transition: transform 1s;
+}
+.sp2 img:hover{
+	transform: scale(1.02,1.02);
+	transition: transform 2s;
+}
+.sp6-1{
+	width:45%;
+	heigth:90%;
+	margin-left:5%;
+	float:left;
+}
+.sp6-2{
+	width:45%;
+	heigth:90%;
+	margin-left:2%;
+	margin-top:30%;
+	float:left;
+}
+.sp7{
+	cursor: pointer;
+	width:40%;
+	heigth:40%;
+	margin-left:5%;
+	margin-top:5%;
+	float:left;
+	overflow: hidden;
+}
+.sp7 img{
+	transition: transform 1s;
+}
+.sp7 img:hover{
+	transform: scale(1.02,1.02);
+	transition: transform 2s;
+}
+#ret{
+	text-align: center;
+	width: 100%;
+	height: 5%;
+}
+.about{
+	width: 100%;
+	height: 25%;
+	background-color: cornflowerblue;
+	color: #FFF;
+}
+.about a:link{
+	text-decoration: none;
+	color: white;
+}
+.about a:hover{
+	text-decoration: underline;
+}
+.about a:visited{
+	color: white;
+}
